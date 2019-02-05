@@ -10,7 +10,10 @@ flask-wtf = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 requests = "*"
-pyls = "*"
+python-language-server = "*"
+flask-bcrypt = "*"
+flask-login = "*"
+werkzeug = "*"
 
 [requires]
 python_version = "3.6"
