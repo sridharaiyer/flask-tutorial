@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Download YouTube URL as MP3</h1>
+  <form method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.videourl.label }} {{ form.videourl() }}
+    {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}

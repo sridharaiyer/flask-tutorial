@@ -1,3 +1,4 @@
+# Importing app and db from the __init__.py inside the loginproject directory
 from loginproject import app,db
 from flask import render_template, redirect, request, url_for, flash,abort
 from flask_login import login_user,login_required,logout_user
@@ -36,7 +37,7 @@ def login():
         # The verify_password method comes from the User object
         # https://stackoverflow.com/questions/2209755/python-operation-vs-is-not
 
-        if user.check_password(form.password.data) and user is not None:
+        if user is not None and user.check_password(form.password.data):
             #Log in the user
 
             login_user(user)
