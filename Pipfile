@@ -16,6 +16,8 @@ flask-login = "*"
 werkzeug = "*"
 flask-bootstrap = "*"
 names = "*"
+pytube = "*"
+slugify = "*"
 
 [requires]
 python_version = "3.6"
